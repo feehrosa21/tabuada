@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/icon.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada Dinâmica</title>
+</head>
+
+<body>
+    <header>
+        <h1>Tabuada Dinâmica</h1>
+        <button id="toggle-mode">Alterar Modo</button>
+    </header>
+
+    <div class="tabuada">
+        <h2>Digite um valor para gerar a tabuada:</h2>
+
+        <input type="text" name="" id="numero">
+        <button onclick="gerarTabuada()" class="btn2">Gerar Tabuada</button>
+
+
+        <table id="tabela-tabuada"></table>
+    </div>
+
+    <script>
+        const toggleBtn = document.getElementById('toggle-mode');
+        const body = document.body;
+
+        toggleBtn.addEventListener('click', function () {
+            body.classList.toggle('dark-mode')
+        })
+
+        function gerarTabuada() {
+            var numero = parseInt(document.getElementById('numero').value);
+            var tabela = document.getElementById('tabela-tabuada');
+
+            tabela.innerHTML = "" //limpar a tabela antes de gerar a outra.
+
+            //Gerar tabuada.
+
+            for (var i = 1; i <= 10; i++) {
+                var resultado = numero * i;
+                var linha = "<tr><td>" + numero + " X " + i + "</td><td>" + ' = ' + resultado + "</td></tr>";
+
+                tabela.innerHTML += linha
+            }
+        }
+
+    </script>
+
+
+    <footer>
+        <div class="logo">
+            <img src="img/fr.png" alt="logo aqui" width="200px" height="200px">
+        </div>
+
+        <p>Me acompanhe nas redes sociais para ficar por dentro de tudo.</p>
+
+        <div class="icons">
+            <a href="https://www.instagram.com/feehrosa21/"><img src="img/instagram.png" alt="icon instagram"
+                    width="40px" height="40px"></a>
+            <a href="https://www.linkedin.com/in/fernanda-rosa21"><img src="img/linkedin.png" alt="icon linkedin"
+                    width="40px" height="40px"></a>
+            <a href="https://github.com/feehrosa21"><img src="img/github.png" alt="icon github" width="40px"
+                    height="40px"></a>
+        </div>
+
+        <span> Site desenvolvido by Fernanda Rosa&copy; </span>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

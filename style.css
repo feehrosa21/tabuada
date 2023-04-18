@@ -1,0 +1,164 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', sans-serif;
+}
+
+body{
+    background-color: #fff8e6;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ccc7ae;
+    padding: 2.5rem;
+}
+
+h1{
+    color: #545b55;
+    font-size: 2rem;
+}
+
+button{
+    background-color: #d19793;
+    color: #545b55;
+    font-weight: bold;
+    padding: 10px;
+    border: solid #d19793;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: 50ms;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: translateX(5px) translateY(5px);
+    box-shadow: 8px 10px 0px #d19793c2;
+}
+
+.tabuada{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+
+h2{
+    margin: 1rem;
+    font-size: 1.5rem;
+    background-color: #f6cec8;
+    color: #545b55;
+}
+
+input{
+    margin: 1rem;
+    padding: 0.4rem;
+    border: solid 1px;
+    border-radius: 0.5rem;
+    width: 12rem;
+    font-size: 1rem;
+    background-color: #e4dfc9;
+    border: solid #ccc7ae 2px;
+}
+
+textarea:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.btn2{
+    background-color: #ccc7ae;
+    border: #ccc7ae solid;
+    color: #545b55;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.btn2:hover{
+    transform: translateX(5px) translateY(5px);
+    box-shadow: 2px 8px 0px #ccc7aec7;
+}
+
+#tabela-tabuada{
+    color: #545b55;
+    margin: 0.8rem;
+    font-size: 1.2rem;
+}
+
+.dark-mode{
+    background-color: #545b55;
+    color: #ccc7ae;
+}
+
+.dark-mode header{
+    background-color: #424943;  
+}
+
+.dark-mode h1{
+    color: #d19793c0;
+    font-size: 2rem;
+}
+
+.dark-mode p{
+    color: #ccc7ae;
+}
+
+.dark-mode .btn2{
+    background-color: #d19793;
+    border: solid #d19793;
+}
+
+.dark-mode .btn2:hover{
+    box-shadow: 2px 8px 0px #d19793bb;
+}
+
+.dark-mode #tabela-tabuada{
+    color: #ccc7ae;
+}
+
+.dark-mode footer{
+    background-color: #424943;
+}
+
+footer{
+    background-color: #ccc7ae;
+    display: flex;
+    flex-direction: row; 
+    width: 100%;
+    bottom: 0;
+    top: 5rem;
+    position: relative;
+}
+
+.logo{
+    margin-left: 4.5rem;
+    margin-top: 1rem;
+}
+
+p{
+    font-size: 1.2rem;
+    margin-top: 4rem;
+    margin-left: 8rem;
+}
+
+.icons{ 
+    margin-top: 6.5rem;
+    margin-left: -22rem;
+}
+
+span{
+    margin-top: 10rem;
+    margin-left: -14rem;
+    font-size: 1.2rem;
+    color: #975d59;
+    font-weight: bold;
+}
+
